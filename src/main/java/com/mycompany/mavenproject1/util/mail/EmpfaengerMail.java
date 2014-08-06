@@ -15,24 +15,23 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.mycompany.mavenproject1.util.concurrency;
+package de.shop.util.mail;
 
-import javax.annotation.Resource;
-import javax.enterprise.concurrent.ManagedExecutorService;
-import javax.enterprise.context.Dependent;
-import javax.enterprise.inject.Produces;
+import java.lang.annotation.Documented;
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
+import javax.inject.Qualifier;
+
+import static java.lang.annotation.ElementType.FIELD;
+import static java.lang.annotation.ElementType.PARAMETER;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
  * @author <a href="mailto:Juergen.Zimmermann@HS-Karlsruhe.de">J&uuml;rgen Zimmermann</a>
  */
-@Dependent
-public class ManagedExecutorServiceProducer {
-	@Resource
-	@Produces
-	private ManagedExecutorService managedExecutorService;
-	
-	// fuer zeitlich versetzte oder periodische Ausfuehrungen
-	//@Resource
-	//@Produces
-	//private ManagedScheduledExecutorService managedScheduledExecutorService;
+@Qualifier
+@Target({ FIELD, PARAMETER })
+@Retention(RUNTIME)
+@Documented
+public @interface EmpfaengerMail {
 }

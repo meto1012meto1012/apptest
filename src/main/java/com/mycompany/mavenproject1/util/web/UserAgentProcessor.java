@@ -23,7 +23,7 @@
  * Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
  * 02110-1301 USA, or see the FSF site: http://www.fsf.org.
  **/
-package de.shop.util.web;
+package com.mycompany.mavenproject1.util.web;
 
 import java.io.Serializable;
 
@@ -33,11 +33,7 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import javax.servlet.http.HttpServletRequest;
 
-/**
- * @author <a href="mailto:jbalunas@redhat.com">Jay Balunas</a>
- * @author <a href="http://community.jboss.org/people/bleathem">Brian Leathem</a>
- * @author <a href="mailto:Juergen.Zimmermann@HS-Karlsruhe.de">J&uuml;rgen Zimmermann</a>
- */
+
 @Named("userAgent")
 @SessionScoped
 public class UserAgentProcessor implements Serializable {

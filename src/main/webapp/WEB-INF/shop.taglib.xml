@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+
+
+<facelet-taglib xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facelettaglibary_2_2.xsd"
+                version="2.2">
+
+	<namespace>http://shop.de</namespace>
+	
+	<function>
+		<function-name>aktuellesDatum</function-name>
+		<function-class>de.shop.util.web.Functions</function-class>
+		<function-signature>
+			java.util.Date aktuellesDatum()
+		</function-signature>
+	</function>
+	
+	<function>
+		<function-name>timeZone</function-name>
+		<function-class>de.shop.util.web.Functions</function-class>
+		<function-signature>
+			java.util.TimeZone timeZone(java.lang.String)
+		</function-signature>
+	</function>
+
+	<function>
+		<function-name>asList</function-name>
+		<function-class>de.shop.util.web.Functions</function-class>
+		<function-signature>
+			java.util.List asList(java.util.Collection)
+		</function-signature>
+	</function>
+</facelet-taglib>

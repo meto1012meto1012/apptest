@@ -56,7 +56,7 @@
 //
 // *******************************************
  */
-package de.shop.util.web;
+package com.mycompany.mavenproject1.util.web;
 
 /**
  * The DetectSmartPhone class encapsulates information about

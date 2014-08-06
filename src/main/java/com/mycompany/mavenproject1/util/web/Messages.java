@@ -1,23 +1,8 @@
-/*
- * Copyright (C) 2013 Juergen Zimmermann, Hochschule Karlsruhe
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 
-package de.shop.util.web;
 
-import de.shop.util.interceptor.Log;
+package com.mycompany.mavenproject1.util.web;
+
+import com.mycompany.mavenproject1.util.interceptor.Log;
 import java.io.Serializable;
 import java.lang.invoke.MethodHandles;
 import java.text.MessageFormat;
@@ -40,9 +25,7 @@ import static javax.faces.application.FacesMessage.SEVERITY_ERROR;
 import static javax.faces.application.FacesMessage.SEVERITY_INFO;
 import static javax.faces.application.FacesMessage.SEVERITY_WARN;
 
-/**
- * @author <a href="mailto:Juergen.Zimmermann@HS-Karlsruhe.de">J&uuml;rgen Zimmermann</a>
- */
+
 @ApplicationScoped
 @Log
 public class Messages implements Serializable {
